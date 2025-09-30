@@ -2,12 +2,12 @@ name: Deploy To Dev S3
 
 on:
   push:
-    brunches:
+    branches:
       - develop
 
 jobs:
   deploy:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Github Repository 파일 불러오기
         uses: actions/checkout@v4

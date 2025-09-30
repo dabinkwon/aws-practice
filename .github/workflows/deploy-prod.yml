@@ -2,12 +2,12 @@ name: Deploy To Prod S3
 
 on:
   push:
-    brunches:
+    branches:
       - main
 
 jobs:
   deploy:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Github Repository 파일 불러오기
         uses: actions/checkout@v4
